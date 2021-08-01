@@ -1,0 +1,75 @@
+/*
+* Mobile                <768px
+* fixture               sm
+* columns               12
+* margin                10px
+* gutter                5px
+* container-size        100% - margin * 2
+*
+* Tablet               >=768px
+* fixture               md
+* columns               12
+* margin                10px
+* gutter                20px
+* container-size        100% - margin * 2
+*
+* Desktop               >=1200px
+* fixture               lg
+* columns               12
+* margin                auto
+* gutter                20px
+* unit                  60px
+* max-container         (unit + gutter) * columns
+*/
+
+$column: 12;
+$gutter: 20px;
+$margin: 10px;
+
+$sm-gutter: 5px;
+
+$lg-unit: 60px;
+$lg-max-container: ($lg-unit + $gutter) * $column;
+
+.container {
+  width: 100%;
+  padding: 0 $margin;
+  margin: 0 auto;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  [class^='col-'] {
+    padding: 0 $sm-gutter / 2;
+  }
+
+  @for $i from 1 through $column {
+    .col-sm-#{$i} {
+      width: percentage($i/$column);
+    }
+  }
+
+  @include responsive(T) {
+    [class^='col-'] {
+      padding: 0 $gutter / 2;
+    }
+
+    @for $i from 1 through $column {
+      .col-md-#{$i} {
+        width: percentage($i/$column);
+      }
+    }
+  }
+
+  @include responsive(D) {
+    max-width: $lg-max-container;
+    padding: 0;
+    @for $i from 1 through $column {
+      .col-lg-#{$i} {
+        width: percentage($i/$column);
+      }
+    }
+  }
+}
