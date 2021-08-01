@@ -1,18 +1,19 @@
 * {
   margin: 0;
-  font-family: sans-serif;
+  font-family: $font-main;
   /* font-family에 사용할 폰트 적기! */
   box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: $font-main;
+  font-size: 14px;
   /* 본문 텍스트 사이즈 적기 */
 }
 
 body {
-  font-family: sans-serif;
-
+  font-family: $font-main;
+  color: $white;
   /* 본문 텍스트 컬러 적기 */
 }
 
