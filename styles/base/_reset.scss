@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+  /* font-family에 사용할 폰트 적기! */
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  /* 본문 텍스트 사이즈 적기 */
+}
+
+body {
+  font-family: sans-serif;
+
+  /* 본문 텍스트 컬러 적기 */
+}
+
+h1 {
+  margin: 0;
+  /* normalize 파일에서 <h1> margin을 주고있기 때문에 margin을 초기화 시켜줌 */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 0;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+}
