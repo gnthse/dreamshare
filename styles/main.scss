@@ -4,6 +4,7 @@
 
 @import './base/normalize';
 @import './base/reset';
+@import './base/globals';
 
 @import './mixins/responsive';
 @import './mixins/flexbox';
@@ -11,7 +12,13 @@
 @import './modules/buttons';
 
 @import './components/step-box';
+@import './components/partner-box';
+@import './components/idea-box';
 
 @import './layouts/grid';
 @import './layouts/header';
 @import './layouts/works';
+@import './layouts/partner';
+@import './layouts/ideas';
+@import './layouts/interest';
+@import './layouts/footer';
