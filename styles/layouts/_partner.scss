@@ -1,0 +1,66 @@
+.partner {
+  .row {
+    justify-content: center;
+  }
+  text-align: center;
+
+  .col-lg-3:nth-last-child(2) .partner-box {
+    margin-bottom: 36px;
+  }
+
+  .partner-title {
+    margin-bottom: 14px;
+    font-size: 22px;
+    color: $dark;
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $dark;
+  }
+
+  .partner-desc {
+    width: 236px;
+    font-family: $font-sub;
+    font-size: 14px;
+    font-weight: 300;
+    color: $secondary;
+  }
+
+  @include responsive(T) {
+    .partner-title {
+      margin-bottom: 35px;
+    }
+
+    .col-md-4:nth-child(3),
+    .col-md-4:nth-child(4) {
+      margin-bottom: 35px;
+    }
+
+    .col-md-4:nth-child(6),
+    .col-md-4:nth-child(7) {
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      width: 180px;
+      margin: 0 auto;
+    }
+  }
+
+  @include responsive(D) {
+    .partner-desc {
+      width: 221px;
+    }
+
+    .col-md-4:nth-child(3),
+    .col-md-4:nth-child(4),
+    .col-md-4:nth-child(6),
+    .col-md-4:nth-child(7) {
+      margin-bottom: 0;
+    }
+  }
+}
