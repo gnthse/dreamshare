@@ -790,7 +790,7 @@ ol {
   text-align: center; }
   .ideas .ideas-title {
     width: 280px;
-    margin-bottom: 33px;
+    margin: 0 auto 33px;
     font-size: 22px;
     font-weight: 700;
     color: #444; }
@@ -881,8 +881,8 @@ ol {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1px;
-    margin-bottom: 6px; }
+    max-width: 280px;
+    margin: 1px auto 6px; }
   .footer .footer-list-item {
     margin-right: 16px;
     font-family: "Roboto", sans-serif;

@@ -21,8 +21,8 @@
   .footer-list {
     @include flexbox;
     flex-wrap: wrap;
-    margin-top: 1px;
-    margin-bottom: 6px;
+    max-width: 280px;
+    margin: 1px auto 6px;
   }
 
   .footer-list-item {
