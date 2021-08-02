@@ -8,6 +8,11 @@
 
 .step-box {
   @extend %step-base;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 
   .step-wrapper {
     @include column-flexbox(between, start);
@@ -44,6 +49,18 @@
 
     .step-wrapper {
       padding-top: 205px;
+    }
+
+    .step-title,
+    .step-content {
+      width: 196px;
+    }
+  }
+
+  @include responsive(D) {
+    .step-title,
+    .step-content {
+      width: 250px;
     }
   }
 }

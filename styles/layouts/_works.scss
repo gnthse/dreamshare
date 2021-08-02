@@ -6,6 +6,7 @@
     font-size: 22px;
     font-weight: 700;
     color: $dark;
+    text-align: center;
   }
 
   .col-md-4:nth-child(2) .step-box {
@@ -30,7 +31,10 @@
 
     .works-title {
       margin-bottom: 35px;
-      text-align: center;
+    }
+
+    .step-text {
+      min-width: 196px;
     }
 
     .col-md-4:nth-child(2),
